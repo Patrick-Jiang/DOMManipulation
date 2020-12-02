@@ -1,20 +1,22 @@
 
-const div = dom.create('<div>newDiv</div>')
-const div3 = dom.create('<div id="parent"><div id="2"></div></div>')
+//dom.js test
 
+// const div = dom.create('<div>newDiv</div>')
+// const div3 = dom.create('<div id="parent"><div id="2"></div></div>')
+//
 // const nodes = dom.empty(window.empty)
-// dom.attr(window.empty,'title','wwwwwwwwwwwwww')
+// dom.attr(window.empty,'title','thisIStitleString')
 // const node = dom.attr(window.empty,'title')
 //
 // console.log(node)
 // dom.style(window.empty,{border: '1px solid red',color:'green'})
 // dom.style(window.empty,'border','1px solid black')
 // console.log(dom.style(window.empty,'border'))
-
+//
 // console.log(
 //     dom.text(window.e1)
 // )
-
+//
 // dom.class.add(window.empty, 'testClassName')
 // dom.class.add(window.empty, 'testClassName2')
 // dom.class.remove(window.empty, 'testClassName')
@@ -27,5 +29,10 @@ const div3 = dom.create('<div id="parent"><div id="2"></div></div>')
 //
 // let x = dom.find('#empty2')
 // console.log(dom.find('.red',dom.find('#empty2')[0])[0])
-
+//
 // dom.each(dom.children(dom.find('#each')[0]),(n)=>dom.style(n,{color:'red'}))
+
+//JQuery test
+const x =jQuery('#test1')
+
+x.siblings().get(2)

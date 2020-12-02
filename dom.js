@@ -1,5 +1,5 @@
 window.dom = {
-    // equal to dom.create= function(){}
+    // Add element to DOM
     create(string) {
         const container = document.createElement('template')
         container.innerHTML = string.toString().trim()
@@ -19,6 +19,8 @@ window.dom = {
         dom.before(newNode, referenceNode)
         dom.append(referenceNode, newNode)
     },
+
+    // Delete element from DOM
     remove(node) {
         node.parentNode.removeChild(node)
         return node
@@ -34,6 +36,8 @@ window.dom = {
         }
         return array
     },
+
+    // Set or Get attribute from node
     attr(node, name, string) {
         if (arguments.length === 3) {
             node.setAttribute(name, string.toString())
@@ -41,6 +45,8 @@ window.dom = {
             return node.getAttribute(name)
         }
     },
+
+
     text(node, newText) {
         if (arguments.length === 2) {
             node.textContent = newText.toString()
